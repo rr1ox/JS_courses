@@ -133,9 +133,13 @@ swap([11, 22, 33, 44], 0,1);
 
 /*
 - Написати функцію обміну валюти exchange(sumUAH,currencyValues,exchangeCurrency)
-Приклад exchange(10000,[{currency:'USD',value:40},{currency:'EUR',value:42}],'USD') // => 250*/
+Приклад exchange(10000,[{currency:'USD',value:40},{currency:'EUR',value:42}],'USD') // => 250*//*
 function exchange(sumUAH,currencyValues,exchangeCurrency){
+    for (const currencyValue of currencyValues) {
 
+    }
 }
-
-exchange(123, 45, 39);
+let main = [
+    {currency:'USD',value:40},
+    {currency:'EUR',value:42}];
+exchange(123, 45, 39);*/
