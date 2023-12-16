@@ -1,10 +1,8 @@
 /*- Знайти та вивести довижину настипних стрінгових значень
     'hello world', 'lorem ipsum', 'javascript is cool'
-- Перевести до великого регістру наступні стрінгові значення
-      'hello world', 'lorem ipsum', 'javascript is cool'
-- Перевести до нижнього регістру настипні стрінгові значення
-      'HELLO WORLD', 'LOREM IPSUM', 'JAVASCRIPT IS COOL'
-- Є "брудна" стрінга let str = ' dirty string   ' . Почистити її від зайвих пробілів.
+
+
+
 
 - Напишіть функцію stringToarray(str), яка перетворює рядок на масив слів.
     let str = 'Ревуть воли як ясла повні';
@@ -63,5 +61,18 @@ let coursesAndDurationArray = [
 /*- Перевести до великого регістру наступні стрінгові значення
       'hello world', 'lorem ipsum', 'javascript is cool'*/
 
-let text = 'hello world';
-console.log(text.toUpperCase());
+let array = ['hello world', 'lorem ipsum', 'javascript is cool'];
+for (let i = 0; i < array.length; i++) {
+    const arrayElement = array[i];
+    console.log(arrayElement.toUpperCase());
+}
+/*- Перевести до нижнього регістру настипні стрінгові значення
+      'HELLO WORLD', 'LOREM IPSUM', 'JAVASCRIPT IS COOL'*/
+let arrString = ['HELLO WORLD', 'LOREM IPSUM', 'JAVASCRIPT IS COOL'];
+for (let i = 0; i < arrString.length; i++) {
+    const arrStringElement = arrString[i];
+    console.log(arrStringElement.toLowerCase());
+}
+
+/*- Є "брудна" стрінга let str = ' dirty string   ' . Почистити її від зайвих пробілів.*/
+let str = ' dirty string   ';
