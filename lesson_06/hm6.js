@@ -1,14 +1,6 @@
-/*- Знайти та вивести довижину настипних стрінгових значень
-    'hello world', 'lorem ipsum', 'javascript is cool'
+/*-
 
 
-
-
-- Напишіть функцію stringToarray(str), яка перетворює рядок на масив слів.
-    let str = 'Ревуть воли як ясла повні';
-    let arr = stringToarray(str); ['Ревуть', 'воли', 'як', 'ясла', 'повні']
-
-- є масив чисел [10,8,-7,55,987,-1011,0,1050,0] . за допомоги map  перетворити всі об'єкти в масиві на стрінгові.
 - створити функцію sortNums(direction), яка прймає масив чисел, та сортує його від більшого до меньшого, або навпаки в залежності від значення аргументу direction.
 let nums = [11,21,3];
 sortNums(nums,'ascending') // [3,11,21]
@@ -56,7 +48,10 @@ let coursesAndDurationArray = [
 --написати пошук всіх об'єктів, в який в modules є docker*/
 
 
-
+/*- Знайти та вивести довижину настипних стрінгових значень
+    'hello world', 'lorem ipsum', 'javascript is cool'*/
+let arrvc = ['hello world', 'lorem ipsum', 'javascript is cool'];
+arrvc.map((item) => console.log(item.length));
 
 /*- Перевести до великого регістру наступні стрінгові значення
       'hello world', 'lorem ipsum', 'javascript is cool'*/
@@ -75,4 +70,26 @@ for (let i = 0; i < arrString.length; i++) {
 }
 
 /*- Є "брудна" стрінга let str = ' dirty string   ' . Почистити її від зайвих пробілів.*/
-let str = ' dirty string   ';
+// let str = ' dirty string   ';
+// console.log(str.trim());
+
+/*- Напишіть функцію stringToarray(str), яка перетворює рядок на масив слів.
+    let str = 'Ревуть воли як ясла повні';
+    let arr = stringToarray(str); ['Ревуть', 'воли', 'як', 'ясла', 'повні']*/
+
+let str = 'Ревуть воли як ясла повні';
+let arr = str.split(' ');
+console.log(arr);
+
+/* - є масив чисел [10,8,-7,55,987,-1011,0,1050,0] .
+за допомоги map  перетворити всі об'єкти в масиві на стрінгові.*/
+
+const nums = [10,8,-7,55,987,-1011,0,1050,0];
+let numS = nums.map((item) => item.toString());
+console.log(numS);
+
+/*- створити функцію sortNums(direction), яка прймає масив чисел,
+та сортує його від більшого до меньшого, або навпаки в залежності від значення аргументу direction.
+let nums = [11,21,3];
+sortNums(nums,'ascending') // [3,11,21]
+sortNums(nums,'descending') // [21,11,3]*/
