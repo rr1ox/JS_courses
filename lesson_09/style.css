@@ -1,0 +1,30 @@
+.main {
+    border: 3px solid #ef0707;
+    margin-bottom: 10px;
+}
+.title {
+    border: 3px solid #00a990;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex {
+    display: flex;
+    gap: 10px;
+}
+.timeM {
+    flex-grow: 1;
+    border: 3px solid #00a990;
+
+}
+.timeH{
+    flex-grow: 5;
+    border: 3px solid #00a990;
+}
+.ul{
+    border: 3px solid #7200ce;
+}
+li{
+    border: 3px solid #00a990;
+    margin: 10px 0;
+}
